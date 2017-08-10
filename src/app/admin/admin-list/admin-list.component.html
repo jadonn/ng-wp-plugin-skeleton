@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Users</h3>
+    </div>
+  </div>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let user of users">
+      <div class="col-md-4">
+        {{ user.name }}
+        <button type="button" class="btn-default" (click)="onSelect( user )">View User</button>
+      </div>
+    </li>
+  </ul>
+</div>
