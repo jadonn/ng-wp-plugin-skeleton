@@ -24,8 +24,13 @@ export class AuthService {
     return this.http.get(this.apiHost + '/check_admin', { headers })
                     .map(res => res.json())
                     .map((res) => {
-                      this.isAdmin = res.data;
-                      return res.data;
+                      if ( res.success ) {
+                      this.isAdmin = res.result;
+                      return res.result;
+                      }else {
+                        this.isAdmin = false;
+                        return false;
+                      }
                     });
   }
   getIsAdmin() {
