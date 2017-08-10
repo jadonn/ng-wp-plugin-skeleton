@@ -8,7 +8,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "package": "rm -rf ./plugin-skeleton; ng build; mkdir -p ./plugin-skeleton/ng; cp -f ./api/plugin-skeleton.php ./plugin-skeleton/plugin-skeleton.php; cp -rfvp ./dist/* ./plugin-skeleton/ng/"
   },
   "private": true,
   "dependencies": {

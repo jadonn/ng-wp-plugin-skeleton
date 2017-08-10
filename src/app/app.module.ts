@@ -31,7 +31,7 @@ import { AdminUserDetailComponent } from './admin/admin-user-detail/admin-user-d
     HttpModule,
     RoutingModule
   ],
-  providers: [],
+  providers: [ AuthService, AuthGuardService, AdminListService, WindowService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

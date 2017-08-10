@@ -16,7 +16,7 @@ const appRoutes: Routes = [
       path: '',
       children: [
         { path: '', component: AdminListComponent },
-        { path: '/user/:id', component: AdminUserDetailComponent }
+        { path: 'user/:id', component: AdminUserDetailComponent }
       ]
     }
   ]}
