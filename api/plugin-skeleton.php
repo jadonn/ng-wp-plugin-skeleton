@@ -9,7 +9,7 @@ Author: Jadon Naas
 
 class PluginSkeletonRestController extends WP_REST_Controller{
 
-    public function register_routers(){
+    public function register_routes(){
         $version = '1';
         $namespace = '/plugin-skeleton/v' . $version;
         $base = 'api';

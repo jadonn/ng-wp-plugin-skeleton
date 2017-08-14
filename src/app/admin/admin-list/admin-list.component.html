@@ -8,6 +8,8 @@
     <li class="list-group-item" *ngFor="let user of users">
       <div class="col-md-4">
         {{ user.name }}
+      </div>
+      <div class="col-md-4">
         <button type="button" class="btn-default" (click)="onSelect( user )">View User</button>
       </div>
     </li>

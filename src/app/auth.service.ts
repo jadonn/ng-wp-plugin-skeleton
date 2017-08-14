@@ -13,7 +13,7 @@ export class AuthService {
   private isAdmin: false;
 
   constructor(private http: Http, private windowService: WindowService) {
-    this.apiHost = windowService.nativeWindow.appInfo.home_url + '/wp-json/performance-management/v1/api';
+    this.apiHost = windowService.nativeWindow.appInfo.home_url + '/wp-json/plugin-skeleton/v1/api';
    }
 
   checkIsAdmin() {
